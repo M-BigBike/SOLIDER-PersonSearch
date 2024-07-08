@@ -24,7 +24,7 @@ def print_statistics(dataset):
         "num_images": num_imgs,
         "num_boxes": num_boxes,
     }
-    if dataset.name != "CUHK-SYSU" or dataset.split != "query":
+    if dataset.name != "cuhk_sysu" or dataset.split != "query":
         pid_list = sorted(list(pid_set))
         if dataset.split == "query":
             num_pids, min_pid, max_pid = len(pid_list), min(pid_list), max(pid_list)
@@ -51,9 +51,9 @@ def print_statistics(dataset):
 
 
 def build_dataset(dataset_name, root, transforms, split, verbose=True):
-    if dataset_name == "CUHK-SYSU":
+    if dataset_name == "cuhk_sysu":
         dataset = CUHKSYSU(root, transforms, split)
-    elif dataset_name == "PRW":
+    elif dataset_name == "prw":
         dataset = PRW(root, transforms, split)
     else:
         raise NotImplementedError(f"Unknow dataset: {dataset_name}")

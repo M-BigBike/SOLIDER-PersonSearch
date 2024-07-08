@@ -1,9 +1,12 @@
 OUTPUT_DIR: "./exp_cuhk"
 INPUT:
-  DATASET: "CUHK-SYSU"
-  DATA_ROOT: "data/CUHK-SYSU"
+  DATASET: "cuhk_sysu"
+  #DATA_ROOT: "data/CUHK-SYSU" #For local PC
+  DATA_ROOT: "/kaggle/input/cuhk-sysu/cuhk_sysu" #For Kaggle
+  #BATCH_SIZE_TRAIN: 2  # Modify this key if it exists and is named correctly
 SOLVER:
   MAX_EPOCHS: 20
+  #BASE_LR: 0.0012      # Modify this key
 MODEL:
   LOSS:
     LUT_SIZE: 5532

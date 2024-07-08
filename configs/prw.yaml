@@ -1,9 +1,12 @@
 OUTPUT_DIR: "./exp_prw"
 INPUT:
-  DATASET: "PRW"
-  DATA_ROOT: "data/PRW"
+  DATASET: "prw"
+  #DATA_ROOT: "data/PRW" #For local PC
+  DATA_ROOT: "/kaggle/input/prw-personsearch/prw" #For Kaggle
+  #BATCH_SIZE_TRAIN: 2  # Modify this key if it exists and is named correctly
 SOLVER:
   MAX_EPOCHS: 18
+  #BASE_LR: 0.0012      # Modify this key
 MODEL:
   LOSS:
     LUT_SIZE: 482

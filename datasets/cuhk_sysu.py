@@ -8,7 +8,7 @@ from .base import BaseDataset
 
 class CUHKSYSU(BaseDataset):
     def __init__(self, root, transforms, split):
-        self.name = "CUHK-SYSU"
+        self.name = "cuhk_sysu"
         self.img_prefix = osp.join(root, "Image", "SSM")
         super(CUHKSYSU, self).__init__(root, transforms, split)
 

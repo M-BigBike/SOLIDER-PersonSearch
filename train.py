@@ -61,7 +61,7 @@ def main(args):
     start_epoch = 0
     if args.resume:
         assert args.ckpt, "--ckpt must be specified when --resume enabled"
-        start_epoch = resume_from_ckpt(args.ckpt, model, optimizer, lr_scheduler)
+        start_epoch = resume_from_ckpt(args.ckpt, model, optimizer, lr_scheduler) + 1
 
     print("Creating output folder")
     output_dir = cfg.OUTPUT_DIR

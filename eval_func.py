@@ -348,7 +348,7 @@ def eval_search_prw(
         query_imname = query_dataset.annotations[i]["img_name"]
         query_roi = query_dataset.annotations[i]["boxes"]
         query_pid = query_dataset.annotations[i]["pids"]
-        query_cam = query_dataset.annotations[i]["cam_id"]
+        query_cam = query_dataset.annotations[i]["cam_id", None] # Safe access to 'cam_id'
 
         # Find all occurence of this query
         gallery_imgs = []

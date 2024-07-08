@@ -1,5 +1,5 @@
 {
-    "image_root": "data/CUHK-SYSU/Image/SSM",
+    "image_root": "/kaggle/input/cuhk-sysu/cuhk_sysu/Image/SSM",
     "results": [
         {
             "query_img": "s13944.jpg",

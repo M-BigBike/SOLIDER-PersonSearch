@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/opt/conda/envs/newCondaEnvironment/bin/python
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
 import pickle as pkl

@@ -149,7 +149,7 @@ def evaluate_performance(
 
     eval_detection(gallery_loader.dataset, gallery_dets, det_thresh=0.01)
     eval_search_func = (
-        eval_search_cuhk if gallery_loader.dataset.name == "CUHK-SYSU" else eval_search_prw
+        eval_search_cuhk if gallery_loader.dataset.name == "cuhk_sysu" else eval_search_prw
     )
     eval_search_func(
         gallery_loader.dataset,
